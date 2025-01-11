@@ -13,7 +13,8 @@ import java.util.concurrent.Executors;
 @Service
 public class CrawlerService {
 
-    private static final List<String> PRODUCT_PATTERNS = Arrays.asList("/product/","products", "/item/", "/p/","category","/dp/", "/gp/product/");
+    private static final List<String> PRODUCT_PATTERNS = Arrays.asList("/product/","products", "/item/", "/p/","category","/dp/", "/gp/product/",
+            "/itm/","/ip/product","product-name");
     private static final int THREAD_POOL_SIZE = 2;
 
     public CrawlResult crawlDomains(List<String> domains) {
